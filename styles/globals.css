@@ -9,4 +9,6 @@ body {
   font-family: SF Pro Display, Helvetica, sans-serif;
   line-height: 1.1;
   letter-spacing: 0em;
+  scroll-behavior: smooth;
+
 }

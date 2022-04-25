@@ -1,15 +1,21 @@
 import react from "react";
 import Image from "next/image";
+import ProductCard from "../components/productCard";
 
 //TODO - pensar no card, section layout
 
 const productSection = ({products}) => {
   return (
     <>
-      <section className="min-h-screen flex flex-col items-center justify-center bg-black">
-        <h1 className="text-white text-center">{products}</h1>
-        <h1 className="text-white text-center">{products}</h1>
-        <h1 className="text-white text-center">{products}</h1>
+      <section className="min-h-screen grid grid-cols-2 md:grid-cols-3 items-center bg-black">
+        
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+
       </section>
     </>
   );
