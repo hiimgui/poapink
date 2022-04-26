@@ -6,14 +6,15 @@ module.exports = {
   theme: {
     colors: {
       transparent: "transparent",
-      'white': '#fff',
-      'black': '#000',
-      
+      white: "#fff",
+      black: "#000",
+      pink: "#FF6FB5",
+      yellow: "#FCF69C",
     },
     extend: {
       height: {
-        'half-screen': '50vh',
-      }
+        "half-screen": "50vh",
+      },
     },
   },
   plugins: [],
