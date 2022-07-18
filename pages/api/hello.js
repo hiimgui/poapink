@@ -1,5 +1,9 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+const getStaticProps = async () => {
+  const res = await fetch("endpoint");
+  const data = await res.json();
+  return {
+    props: { produto: data },
+  };
+};
 
-export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
-}
+export default getStaticProps;

@@ -1,6 +1,6 @@
 import react from "react";
 import Image from "next/image";
-import ProductCard from "../components/productCard";
+import ProductCard from "../pages/api/products/productCard";
 
 //TODO - pensar no card, section layout
 
