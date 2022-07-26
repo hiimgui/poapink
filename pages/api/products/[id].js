@@ -13,9 +13,19 @@ export const getStaticPaths = async () => {
     fallback: false,
   };
 };
-const Details = () => {
+
+export const getStaticProps = ({params}) => {
+    const {id} = params;
+    return{
+      props: {
+        id: produtos.find((produto)=> produto.id === id)
+      }
+    }
+}
+const Details = ({produtos}) => {
   return (
     <>
+    {/* to implement map com os produtos */}
       <h1>Nome produto</h1>
       <p>Subtitulo produto</p>
       <p>Descricao</p>
